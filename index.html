@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WORD GLOW</title>
+    <!-- <link rel="shortcut icon" href="/FAVICON.png" type="image/x-icon"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
+<link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.1.0/uicons-bold-straight/css/uicons-bold-straight.css'>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Rowdies", sans-serif;
+
+        }
+        .container{
+            height: 100vh;
+            width: 100vw;
+            background: #1B1E29;
+            /* color: wheat; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            /* flex-wrap: wrap; */
+            /* align-content: center; */
+            gap: 30px;
+        }
+        form{
+            display: contents;
+        }
+        .box{
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: center;
+        }
+        .wordbox{
+            position: relative;
+            /* height: 100px; */
+            display: flex;
+            /* background: red; */
+            /* justify-content: center;
+            align-items: center; */
+            /* border: 3px solid #000; */
+            
+        }
+        
+        
+        .letter{
+            height: 100px;
+            width: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+            font-size: 50px;
+            color: #7A7A7A;
+            border-radius: 20px;
+            box-shadow: 1px 1px 4px rgba(255, 255, 255, 0.05),
+            4px 4px 6px rgba(0, 0, 0, 0.2),
+            inset -1px -1px 4px rgba(255, 255, 255, 0.05),
+            inset 1px 1px 1px rgba(0, 0, 0, 0.1);
+        }
+        input[type="checkbox"]{
+            position: absolute;
+            height: 100px;
+            width: 100px;
+            opacity: 0;
+            cursor: pointer;
+        }
+        input[type="checkbox"]:checked ~ .letter{
+            box-shadow: inset 0 0 2px rgba(255, 255, 255, 0.05),
+            inset 4px 4px 6px rgba(0, 0, 0, 0.2);
+            color: yellow;
+            text-shadow: 0px 0px 15px yellow,0px 0px 25px yellow;
+            animation: glow 10s linear 0s infinite alternate none;
+        }
+        @keyframes glow{
+            0%{
+                filter: hue-rotate(0);
+            }
+            100%{
+                filter: hue-rotate(360deg);
+            }
+        }
+        #reset{
+            /* justify-self: center; */
+            height: 60px;
+            width: 125px;
+            font-size: 18px;
+            cursor: pointer;
+            background: #1B1E29;
+            border-radius: 20px;
+            color: #a4a4a4;
+            /* border: 1px solid white;  */
+            transition: all .3s linear;
+            outline: inherit;
+        }
+        #reset:hover{
+            box-shadow: inset 0 0 2px rgba(255, 255, 255, 0.05),
+            inset 4px 4px 6px rgba(0, 0, 0, 0.2);
+            /* text-shadow: 0px 0px 3px #7A7A7A; */
+            transform: scale(1.01);
+        }
+        </style>
+</head>
+<body>
+    <!-- FRONT END -->
+    <div class="container">
+        <form action="">
+           <div class="box"> 
+            <div class="wordbox">
+            <input type="checkbox" name="Frontend" id="F">
+            <div class="letter">M</div>
+        </div>
+        <div class="wordbox">
+            <input type="checkbox" name="Frontend" id="R">
+            <div class="letter">S</div>
+            
+        </div>
+        <div class="wordbox">
+            <input type="checkbox" name="Frontend" id="O">
+            <div class="letter">D</div>
+            
+        </div>
+        <div class="wordbox">
+            <input type="checkbox" name="Frontend" id="N">
+            <div class="letter">H</div>
+            
+        </div>
+        <div class="wordbox">
+            <input type="checkbox" name="Frontend" id="T">
+            <div class="letter">O</div>
+            
+        </div>
+        <div class="wordbox">
+            <input type="checkbox" name="Frontend" id="E">
+            <div class="letter">N</div>
+            
+        </div>
+        <div class="wordbox">
+            <input type="checkbox" name="Frontend" id="N">
+            <div class="letter">I</div>
+            
+        </div>
+        <div class="wordbox">
+            <input type="checkbox" name="Frontend" id="D">
+            <div class="letter"><i class="fi fi-bs-cricket"></i></div>
+
+        </div>
+
+    </div>
+        
+        
+        
+        <input type="reset" value="RESET" id="reset">
+    </div>
+
+</form>
+
+</body>
+</html>
