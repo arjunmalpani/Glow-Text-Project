@@ -28,4 +28,4 @@ To get your glowing text up and running:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/word-glow.git
+   git clone https://github.com/arjunmalpani/wordglow.git
