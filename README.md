@@ -1,6 +1,6 @@
 # Word Glow 🌟
 
-![Word Glow Preview](./design/desktop-preview.jpg)
+![Word Glow Preview](./design/image.png)
 
 ## Welcome to Word Glow! 🎉
 
